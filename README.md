@@ -1,4 +1,4 @@
-## Landing page 'Furniture'"
+## Тестовое задание для компании makeROI
 
 ### [Пример реализации](https://ildarmjs.github.io/plant-shop/)
 
