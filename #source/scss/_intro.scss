@@ -1,0 +1,80 @@
+.intro {
+	padding: 110px 0px 140px 0px;
+
+	&__container {
+		display: grid;
+		grid-template-columns: 1fr 520px;
+	}
+
+	&__image {
+		position: relative;
+		img {
+			position: absolute;
+			left: -40px;
+			top: -190px;
+		}
+	}
+}
+
+.slider {
+	position: relative;
+	&__title {
+		font-weight: 500;
+		font-size: 68px;
+		line-height: 83px;
+		color: $colorGreen;
+		margin-bottom: 24px;
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 178%;
+		color: #2c1500;
+		opacity: 0.8;
+		margin-bottom: 110px;
+	}
+
+	&__cards {
+		position: absolute;
+		left: 0;
+		bottom: -155px;
+		max-width: 640px;
+		display: grid;
+		grid-template-columns: 290px 290px;
+	}
+
+	&__content {
+		cursor: pointer;
+		padding: 38px 0;
+		transition: all 0.6s ease 0s;
+		color: $colorGreen;
+		&:hover {
+			background: $colorGreen;
+			padding: 38px 44px;
+			width: 320px;
+			position: relative;
+			z-index: 3;
+			.content-slider__btn {
+				color: #83adaa;
+			}
+			.content-slider__flower {
+				color: #fff;
+			}
+		}
+	}
+}
+.content-slider {
+	&__btn {
+		color: #999999;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	&__flower {
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 39px;
+		color: $colorGreen;
+	}
+}

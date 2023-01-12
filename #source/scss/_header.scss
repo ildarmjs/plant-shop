@@ -1,0 +1,48 @@
+.header {
+	margin-top: 40px;
+	position: relative;
+	z-index: 2;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		position: relative;
+		span {
+			position: absolute;
+			left: 12px;
+
+			top: 50%;
+			transform: translate(0, -50%);
+			font-family: 'Nunito';
+			font-style: normal;
+			font-weight: 900;
+			font-size: 12px;
+			line-height: 16px;
+			color: #ffffff;
+		}
+	}
+
+	&__button {
+		a {
+			font-family: $fontFamilyNunito;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 14px;
+			background-color: $colorGreen;
+			width: 111px;
+			display: inline-flex;
+			padding: 0 8px;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			transition: background-color 0.3s ease 0s;
+			min-height: 36px;
+			color: #fff;
+			&:hover {
+				background-color: #083a37;
+			}
+		}
+	}
+}

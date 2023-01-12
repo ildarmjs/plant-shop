@@ -1,0 +1,21 @@
+@import '_nullstyle'; // обнуляющий стиль
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@700;900&family=PT+Sans:wght@400;700&display=swap');
+@import '_base.scss';
+@import '_vars.scss';
+@import '_header.scss';
+@import '_intro.scss';
+@import '_about.scss';
+@import '_plants.scss';
+@import '_modal.scss';
+body {
+	font-family: $fontFamilyMontserrat, sans-serif;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+//Основная сетка
+._container {
+	max-width: $maxWidth + px;
+	margin: 0px auto;
+}
